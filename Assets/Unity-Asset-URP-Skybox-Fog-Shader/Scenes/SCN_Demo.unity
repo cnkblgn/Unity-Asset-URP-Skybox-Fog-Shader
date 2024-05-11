@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16895339, g: 0.22634166, b: 0.43502694, a: 1}
+  m_IndirectSpecularColor: {r: 0.32439637, g: 0.38143995, b: 0.5268272, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1556,6 +1556,7 @@ GameObject:
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
   - component: {fileID: 963194231}
+  - component: {fileID: 963194232}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1715,6 +1716,20 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 92ea17423bdc069488fa1d840879caf4, type: 2}
+--- !u!114 &963194232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57737b617db6884c91233b28f4f101e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skyboxFogMaterial: {fileID: 2100000, guid: d5378a626078b644ea3b7cf0b9ffa940, type: 2}
+  skyboxDefaultMaterial: {fileID: 2100000, guid: a1642bb4b5f45f74baeef5f8d287c6ee, type: 2}
 --- !u!1 &1020029966
 GameObject:
   m_ObjectHideFlags: 0

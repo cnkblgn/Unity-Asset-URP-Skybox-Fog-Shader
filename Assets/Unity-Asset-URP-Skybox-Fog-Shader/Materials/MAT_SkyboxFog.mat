@@ -152,9 +152,9 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SunColor: 1
-    - _SunIntensity: 32
+    - _SunIntensity: 47.7
     - _SunPower: 16
-    - _SunRadius: 256
+    - _SunRadius: 768
     - _Surface: 0
     - _UVSec: 0
     - _ZTest: 4
