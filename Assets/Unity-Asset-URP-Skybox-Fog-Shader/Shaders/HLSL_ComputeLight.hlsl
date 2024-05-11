@@ -1,7 +1,7 @@
-#ifndef HLSLMAINLIGHT_INCLUDED
-#define HLSLMAINLIGHT_INCLUDED
+#ifndef HLSLCOMPUTELIGHT_INCLUDED
+#define HLSLCOMPUTELIGHT_INCLUDED
 
-void Light_float(float3 worldPos, out float3 direction, out float3 color, out float shadow)
+void GetLight_float(float3 worldPos, out float3 direction, out float3 color, out float shadow)
 {
     #ifdef SHADERGRAPH_PREVIEW
     direction = normalize(float3(-0.5,0.5,-0.5));
@@ -17,7 +17,7 @@ void Light_float(float3 worldPos, out float3 direction, out float3 color, out fl
     #endif
 }
 
-void Light_half(half3 worldPos, out half3 direction, out half3 color, out half shadow)
+void GetLight_half(half3 worldPos, out half3 direction, out half3 color, out half shadow)
 {
     #ifdef SHADERGRAPH_PREVIEW
     direction = normalize(half3(-0.5,0.5,0.5));
@@ -34,7 +34,7 @@ void Light_half(half3 worldPos, out half3 direction, out half3 color, out half s
     #endif
 }
 
-void LightNoShadow_float(out float3 direction, float3 color)
+void GetLightNoShadow_float(out float3 direction, float3 color)
 {
     #ifdef SHADERGRAPH_PREVIEW
     direction = normalize(float3(-0.5,0.5,-0.5));
@@ -48,7 +48,7 @@ void LightNoShadow_float(out float3 direction, float3 color)
     #endif
 }
 
-void LightShadow_float(float3 WorldPos, out half3 Direction, out half3 Color, out half DistanceAtten, out half ShadowAtten)
+void GetLightShadow_float(float3 WorldPos, out half3 Direction, out half3 Color, out half DistanceAtten, out half ShadowAtten)
 {
    #ifdef SHADERGRAPH_PREVIEW
    Direction = half3(0.5, 0.5, 0);

@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MAT_Skybox
+  m_Name: MAT_SkyboxFog
   m_Shader: {fileID: -6465566751694194690, guid: daf8b1bd86ac25446b2f6e99e33c4ef2, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -43,7 +43,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 8900000, guid: 1d4db75478fd4f546946b8c18ed0adb2, type: 3}
+        m_Texture: {fileID: 8900000, guid: 8981c05728e0fe74d86f057b32114a0e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -135,8 +135,8 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Exposure: 1
-    - _FogBlend: 16
-    - _FogOffset: 0
+    - _FogBlend: 32
+    - _FogOffset: 256
     - _FogPower: 0.976
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -151,7 +151,8 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SunIntensity: 160.62
+    - _SunColor: 1
+    - _SunIntensity: 32
     - _SunPower: 16
     - _SunRadius: 256
     - _Surface: 0
