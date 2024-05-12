@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MAT_SkyboxFog
-  m_Shader: {fileID: -6465566751694194690, guid: daf8b1bd86ac25446b2f6e99e33c4ef2, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: cb05e16e2f3ef4a4e8eaf11108388034, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -29,7 +29,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: Opaque
   disabledShaderPasses:
@@ -98,6 +98,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 55f6756d89e4026428776895a808a294, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SkyboxTexture:
+        m_Texture: {fileID: 8900000, guid: 8981c05728e0fe74d86f057b32114a0e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _TargetMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -136,6 +140,9 @@ Material:
     - _DstBlend: 0
     - _Exposure: 1
     - _FogBlend: 32
+    - _FogHeightBlend: 64
+    - _FogHeightDensity: 0.95
+    - _FogHeightOffset: 0
     - _FogOffset: 256
     - _FogPower: 0.976
     - _GlossMapScale: 1
@@ -148,12 +155,15 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Rotation: 0
+    - _SkyboxBrightness: 0
+    - _SkyboxCutoff: 1
+    - _SkyboxRotation: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SunColor: 1
-    - _SunIntensity: 47.7
-    - _SunPower: 16
+    - _SunIntensity: 5
+    - _SunPower: 256
     - _SunRadius: 768
     - _Surface: 0
     - _UVSec: 0
